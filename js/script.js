@@ -8,7 +8,7 @@ menuItems.forEach(item => {
     // Ambil nama file gambar dari atribut data-img
     const sumberGambar = this.getAttribute('data-img');
     
-    // Ubah atribut src pada tag img
+    // Ubah atribut src pada tag img// perubahan 
     gambarTampil.src = sumberGambar;
   });
 });
