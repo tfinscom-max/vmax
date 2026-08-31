@@ -1,19 +1,3 @@
-// Ambil elemen list menu dan tag gambar
-const menuItems = document.querySelectorAll('.menu-list li');
-const gambarTampil = document.getElementById('gambar-tampil');
-
-// Tambahkan event click ke setiap item menu
-menuItems.forEach(item => {
-  item.addEventListener('click', function() {
-    // Ambil nama file gambar dari atribut data-img
-    const sumberGambar = this.getAttribute('data-img');
-    
-    // Ubah atribut src pada tag img// perubahan 
-    gambarTampil.src = sumberGambar;
-  });
-});
-
-
 let chipDragActive = false;
 /* ---------------- DATA ---------------- */
 const moves = [
