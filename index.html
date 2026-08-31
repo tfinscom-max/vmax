@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rampoe Rangka — Tari Seudati &amp; Sistem Gerak Manusia</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="loginGate">
+  <div class="login-card">
+    <div class="brandmark">Rampoe Rangka</div>
+    <span class="eyebrow">Identifikasi Peserta</span>
+    <h2>Masuk untuk Memulai Belajar</h2>
+    <p class="sub">Isi nama dan NIM sesuai data akademik. Data ini digunakan untuk menautkan aktivitas belajarmu pada media ini dengan pretest–posttest penelitian.</p>
+    <form id="loginForm">
+      <div class="login-field">
+        <label for="inputNama">Nama Mahasiswa</label>
+        <input type="text" id="inputNama" autocomplete="name" placeholder="cth. Syarifah Farissi">
+      </div>
+      <div class="login-field">
+        <label for="inputNim">NIM</label>
+        <input type="text" id="inputNim" autocomplete="off" inputmode="numeric" placeholder="cth. 2306104010023">
+      </div>
+      <p class="login-error" id="loginError">Nama dan NIM wajib diisi sebelum melanjutkan.</p>
+      <button type="submit" class="btn solid">Masuk &amp; Mulai Belajar</button>
+    </form>
+    <p class="login-note">Data disimpan hanya selama sesi ini berlangsung di perangkatmu dan tidak dikirim ke server mana pun.</p>
+  </div>
+</div>
+
+<div id="sessionBadge">
+  <span class="avatar" id="badgeInitial">M</span>
+  <div class="who"><b id="badgeName">—</b><span id="badgeNim">NIM —</span></div>
+  <button id="logoutBtn" title="Keluar">Keluar</button>
+</div>
+
+<nav class="rail" id="rail">
+  <button data-target="#hero" data-label="Beranda" class="active"></button>
+  <button data-target="#peta" data-label="Peta Belajar"></button>
+  <button data-target="#orientasi" data-label="Orientasi"></button>
+  <button data-target="#eksplorasi" data-label="Eksplorasi"></button>
+  <button data-target="#elaborasi" data-label="Elaborasi"></button>
+  <button data-target="#evaluasi" data-label="Evaluasi"></button>
+</nav>
+
+<button class="nav-arrow prev" id="prevBtn" aria-label="Slide sebelumnya" disabled>
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+</button>
+<button class="nav-arrow next" id="nextBtn" aria-label="Slide berikutnya">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+</button>
+
+<div class="dots-mobile" id="dotsMobile">
+  <button data-target="#hero" class="active"></button>
+  <button data-target="#peta"></button>
+  <button data-target="#orientasi"></button>
+  <button data-target="#eksplorasi"></button>
+  <button data-target="#elaborasi"></button>
+  <button data-target="#evaluasi"></button>
+</div>
+
+<div class="slides-viewport" id="slidesViewport">
+<div class="slides-track" id="slidesTrack">
+
+<!-- ============ HERO ============ -->
+<section class="hero slide" id="hero">
+  <div class="wrap">
+    <div>
+      <div class="brandmark">Rampoe Rangka</div>
+      <span class="eyebrow">Sistem Gerak Manusia · Etnobiologi</span>
+      <h1>Setiap gerakan dalam tari Seudati melibatkan <em>sistem muskuloskeletal</em>.</h1>
+      <p class="lede">Rampoe Rangka mengajakmu membaca Tari Seudati — warisan gerak masyarakat Aceh — sebagai teks biologi hidup: rangka, sendi, dan otot yang bekerja serentak dalam irama tanpa alat musik.</p>
+      <div class="cta-row">
+        <a href="#eksplorasi" class="btn solid">Mulai Jelajahi Gerak ↓</a>
+        <a href="#evaluasi" class="btn ghost">Langsung ke Uji Pemahaman</a>
+      </div>
+      <div class="beat-row" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+    </div>
+    <div class="hero-figure">
+      <div class="hero-video-wrap">
+        <video controls>
+          <source src="vi/sdt.mp4" type="video/mp4" title="Tari Seudati — Sanggar Tari">
+        </video>
+      </div>
+      <p class="video-caption">Tari Seudati · Sanggar Tari Keumala Intan</p>
+    </div>
+  </div>
+  <div class="swipe-hint" id="swipeHint">← geser atau klik panah untuk menjelajah →</div>
+</section>
+
+<!-- ============ PETA BELAJAR ============ -->
+<section class="slide" id="peta">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Alur Belajar</span>
+      <h2>Empat tahap membangun pemahaman, bukan sekadar menonton tarian</h2>
+      <p>Media ini disusun mengikuti tahapan pembelajaran penemuan (discovery learning) — urutannya bermakna: kamu diajak mengalami fenomena dulu, sebelum konsep dinamai.</p>
+    </div>
+    <div class="path">
+      <div class="path-card" data-n="01"><h4>Orientasi</h4><p>Mengamati fenomena gerak Seudati dan merumuskan pertanyaan pemantik.</p></div>
+      <div class="path-card" data-n="02"><h4>Eksplorasi</h4><p>Menelusuri lima gerak inti tarian lewat figur anatomi interaktif.</p></div>
+      <div class="path-card" data-n="03"><h4>Elaborasi</h4><p>Menghubungkan temuan dengan konsep rangka, sendi, dan mekanisme otot.</p></div>
+      <div class="path-card" data-n="04"><h4>Evaluasi</h4><p>Menguji kemampuan memecahkan masalah kompleks (CPS) berbasis skenario.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ORIENTASI ============ -->
+<section class="slide" id="orientasi">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Tahap 1 · Orientasi</span>
+      <h2>Tarian tanpa alat musik, tapi tak pernah kehilangan irama</h2>
+    </div>
+    <div class="phenomenon">
+      <div>
+        <blockquote>"Dalam Seudati, tubuh penari adalah instrumennya sendiri — tepukan dada, hentakan kaki, dan lengkingan syair menyatu jadi satu ketukan."</blockquote>
+      </div>
+      <div>
+        <p style="color:var(--text-dim); font-size:.95rem;">Seudati adalah tari tradisi laki-laki dari Aceh yang mengandalkan <em>saman tubuh</em> — tepukan dada, paha, dan hentakan kaki yang serentak — tanpa iringan alat musik apa pun. Justru di situlah pertanyaannya: gerak apa saja yang membuat tubuh mampu menghasilkan bunyi, ritme, dan keserasian gerak sekompak itu?</p>
+        <div class="q-driving">Pertanyaan pemantik: Struktur rangka, sendi, dan otot apa yang memungkinkan satu gerakan tepuk dada dilakukan berulang, serentak, dan berirama oleh belasan penari sekaligus?</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EKSPLORASI ============ -->
+<section class="slide" id="eksplorasi">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Tahap 2 · Eksplorasi</span>
+      <h2>Klik titik pada figur, temukan gerak dan strukturnya</h2>
+      <p>Setiap titik keemasan menandai sendi yang aktif pada satu gerak inti Seudati: <em>Dhiet</em>, <em>Keutreb Jaroe</em>, <em>Nyap</em>, <em>Rheng</em>, dan <em>Geutham Gaki</em>. Klik titik pada figur atau daftar gerak di sebelah kanan — keduanya saling terhubung.</p>
+    </div>
+    <div class="lab">
+      <div class="figure-stage">
+      <img id="gambar-tampil" src="img/1.JPG">
+        <p class="figure-caption">figur ilustratif — bukan foto penari</p>
+      </div>
+
+      <div class="move-list" id="moveList">
+          <ul class="move-list">
+            <li data-img="img/1.JPG"><a href="#">Dada</a></li>
+            <li data-img="img/2a.JPG">Keutreb Jaroe (Petik Jari)</li>
+            <li data-img="img/3a.JPG">Nyap (Membungkuk Maju)</li>
+            <li data-img="img/4a.JPG">Rheng (Memutar Tubuh)</li>
+            <li data-img="img/2c.JPG">Geutham Gaki(Hentakan Kaki)</li>
+          </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ELABORASI ============ -->
+<section class="slide" id="elaborasi">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Tahap 3 · Elaborasi</span>
+      <h2>Menata kembali temuan menjadi konsep sistem gerak</h2>
+      <p>Mulai dari konsep dasar rangka, sendi, dan otot, lalu hubungkan satu per satu dengan gerak Seudati yang baru kamu jelajahi. Buka tiap panel secara berurutan untuk membangun pemahaman yang utuh.</p>
+    </div>
+    <div class="accordion" id="accordion"></div>
+  </div>
+</section>
+
+<!-- ============ EVALUASI ============ -->
+<section class="slide" id="evaluasi">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Tahap 4 · Evaluasi</span>
+      <h2>Uji kemampuan pemecahan masalah kompleks (CPS)</h2>
+      <p>Delapan skenario berikut mengikuti empat dimensi Complex Problem-Solving — memahami masalah, merepresentasikan, merancang solusi, dan memantau/mengevaluasi — dengan dua soal pada tiap dimensi.</p>
+    </div>
+    <span class="part-label">Bagian 1 · Pilihan Ganda</span>
+    <div class="quiz-shell">
+      <div class="quiz-top">
+        <span class="quiz-meta" id="quizMeta">Soal 1 dari 8</span>
+        <div class="progressbar"><i id="quizProgress"></i></div>
+      </div>
+      <div id="quizBody"></div>
+      <div class="result-card" id="resultCard">
+        <div class="result-score" id="resultScore">0/4</div>
+        <div class="result-band" id="resultBand">—</div>
+        <p class="result-note" id="resultNote"></p>
+        <button class="btn ghost" style="margin-top:20px;" onclick="resetQuiz()">Ulangi Uji Pemahaman</button>
+      </div>
+    </div>
+
+    <span class="part-label">Bagian 2 · Cocokkan Gerak dengan Struktur Sendi (Drag &amp; Drop)</span>
+    <div class="match-shell">
+      <div class="match-head">
+        <h3>Seret kartu gerak ke kotak struktur sendi yang sesuai</h3>
+        <p>Ini menguji dimensi <em>merepresentasikan masalah</em> (representing) — hubungkan tiap gerak Seudati dengan jenis sendi yang mendasarinya. Kartu yang cocok akan terkunci otomatis; jika keliru, kartu kembali ke baki.</p>
+        <span class="match-progress" id="matchProgress">0 / 5 tercocok</span>
+      </div>
+      <div class="match-body">
+        <div class="chip-tray" id="chipTray"></div>
+        <div class="drop-grid" id="dropGrid"></div>
+      </div>
+      <div class="match-done" id="matchDone">
+        <p>🎉 Semua gerak berhasil dicocokkan dengan tepat! Ini menunjukkan kamu mampu merepresentasikan hubungan antara gerak tari dan struktur sendi yang mendasarinya.</p>
+        <button class="btn ghost" id="matchResetBtn">Acak &amp; Ulangi</button>
+      </div>
+    </div>
+
+    <span class="part-label">Bagian 3 · Cocokkan Gambar Tulang dengan Gerakan Tari (Drag &amp; Drop)</span>
+    <div class="match-shell">
+      <div class="match-head">
+        <h3>Seret kartu gambar tulang ke nama gerakan yang sesuai</h3>
+        <p>Kebalikan dari Bagian 2 — kali ini kamu mengenali struktur tulang dari gambarnya, lalu menghubungkannya dengan gerakan Seudati yang menggunakannya.</p>
+        <span class="match-progress" id="boneMatchProgress">0 / 5 tercocok</span>
+      </div>
+      <div class="match-body">
+        <div class="chip-tray" id="boneChipTray"></div>
+        <div class="drop-grid" id="boneDropGrid"></div>
+      </div>
+      <div class="match-done" id="boneMatchDone">
+        <p>🎉 Semua gambar tulang berhasil dicocokkan dengan gerakannya! Kamu mampu mengenali struktur rangka secara visual dan mengaitkannya dengan fungsi gerak.</p>
+        <button class="btn ghost" id="boneMatchResetBtn">Acak &amp; Ulangi</button>
+      </div>
+    </div>
+
+    <footer class="slide-footer">
+      <p>Rampoe Rangka — media pembelajaran interaktif dikembangkan sebagai bagian dari penelitian etnobiologi sistem gerak manusia berbasis Tari Seudati, mengacu pada model Dick &amp; Carey dan pendekatan konstruktivisme.</p>
+      <p>Ilustrasi anatomi bersifat skematik, dibuat untuk kebutuhan pembelajaran.</p>
+    </footer>
+  </div>
+</section>
+
+</div>
+</div>
+
+<script src="js/script.js">
+</script>
+</body>
+</html>
