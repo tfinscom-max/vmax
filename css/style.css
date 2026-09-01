@@ -1,4 +1,4 @@
-  @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap');
 
   :root{
     --void:#12141c;
@@ -201,7 +201,17 @@
     position:sticky; top:100px;
   }
   @media (max-width:860px){ .figure-stage{position:static;} }
-  .figure-stage svg{width:100%; height:auto; max-height:60vh;}
+  .figure-stage svg{width:100%; height:auto; max-height:60vh; transition:opacity .3s ease;}
+  .figure-stage svg.hidden{display:none;}
+  .figure-photo{
+    width:100%; height:auto; max-height:70vh; object-fit:contain;
+    background:var(--void);
+    border-radius:var(--radius); display:none;
+    box-shadow:0 24px 48px rgba(0,0,0,0.4); border:1px solid var(--line);
+    animation:photoIn .35s ease;
+  }
+  .figure-photo.active{display:block;}
+  @keyframes photoIn{ from{opacity:0; transform:scale(.97);} to{opacity:1; transform:scale(1);} }
   .hotspot{cursor:pointer;}
   .hotspot circle.ring{fill:none; stroke:var(--gold); stroke-width:1.4; opacity:.55; animation:ringpulse 2.2s ease-in-out infinite;}
   .hotspot circle.dot{fill:var(--gold-soft);}
@@ -227,9 +237,35 @@
   .move-detail .grid2{display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:12px;}
   @media (max-width:520px){ .move-detail .grid2{grid-template-columns:1fr;} }
   .concept-chip{background:var(--void); border:1px solid var(--line); border-radius:8px; padding:10px 12px;}
-  .concept-chip .k{font-family:'JetBrains Mono',monospace; font-size:.66rem; color:var(--gold-soft); text-transform:uppercase; letter-spacing:.05em;}
+  .concept-chip .k{font-family:'JetBrains Mono',monospace; font-size:.66rem; color:var(--gold-soft); text-transform:uppercase; letter-spacing:.05em; display:flex; align-items:center; justify-content:space-between; gap:6px;}
   .concept-chip .v{font-size:.9rem; color:var(--text); margin-top:3px;}
   .move-detail p.desc{color:var(--text-dim); font-size:.9rem; margin:10px 0 0;}
+  .concept-chip.has-image{cursor:pointer; transition:border-color .18s, background .18s, transform .18s;}
+  .concept-chip.has-image:hover{border-color:var(--gold); background:var(--panel-2); transform:translateY(-1px);}
+  .concept-chip.has-image:focus-visible{outline:2px solid var(--gold-soft); outline-offset:2px;}
+  .chip-zoom{font-size:.85rem; opacity:.75; flex-shrink:0;}
+
+  /* ---------- concept image lightbox ---------- */
+  .lightbox{
+    position:fixed; inset:0; z-index:200; display:none;
+    background:rgba(10,11,16,0.86); backdrop-filter:blur(4px);
+    align-items:center; justify-content:center; padding:32px;
+  }
+  .lightbox.open{display:flex;}
+  .lightbox-inner{
+    position:relative; max-width:min(760px,92vw); max-height:90vh;
+    background:var(--panel); border:1px solid var(--line); border-radius:var(--radius);
+    padding:18px; overflow:auto; animation:lightboxIn .25s ease;
+  }
+  @keyframes lightboxIn{ from{opacity:0; transform:scale(.96);} to{opacity:1; transform:scale(1);} }
+  .lightbox-inner img{width:100%; height:auto; border-radius:10px; display:block;}
+  .lightbox-caption{margin-top:12px; font-size:.85rem; color:var(--text-dim); text-align:center;}
+  .lightbox-close{
+    position:absolute; top:-14px; right:-14px; width:34px; height:34px; border-radius:50%;
+    border:1px solid var(--line); background:var(--panel-2); color:var(--ivory);
+    font-size:1.3rem; line-height:1; cursor:pointer; display:flex; align-items:center; justify-content:center;
+  }
+  .lightbox-close:hover{border-color:var(--gold); color:var(--gold-soft);}
 
   /* ---------- elaborasi accordion ---------- */
   .accordion{border-top:1px solid var(--line);}
