@@ -235,7 +235,18 @@
   }
   .move-item.active .move-detail{max-height:340px; margin-top:14px;}
   .move-detail .grid2{display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:12px;}
-  @media (max-width:520px){ .move-detail .grid2{grid-template-columns:1fr;} }
+  @media (max-width:520px){
+    .move-detail .grid2{grid-template-columns:1fr;}
+    /* Di layar sempit kartu konsep jadi 1 kolom sehingga tingginya bertambah;
+       batas max-height desktop (340px) memotong konten. Naikkan batasnya
+       cukup besar dan aktifkan scroll internal agar seluruh menu (Dhiet,
+       Keutreb Jaroe, Nyap, Rheng, Geutham Kaki) bisa terlihat & di-scroll. */
+    .move-item.active .move-detail{
+      max-height:80vh;
+      overflow-y:auto;
+      -webkit-overflow-scrolling:touch;
+    }
+  }
   .concept-chip{background:var(--void); border:1px solid var(--line); border-radius:8px; padding:10px 12px;}
   .concept-chip .k{font-family:'JetBrains Mono',monospace; font-size:.66rem; color:var(--gold-soft); text-transform:uppercase; letter-spacing:.05em; display:flex; align-items:center; justify-content:space-between; gap:6px;}
   .concept-chip .v{font-size:.9rem; color:var(--text); margin-top:3px;}
@@ -396,7 +407,7 @@
   }
   .login-field input{
     width:100%; background:var(--void); border:1px solid var(--line); color:var(--text);
-    padding:12px 14px; border-radius:9px; font-family:'Inter',sans-serif; font-size:.95rem;
+    padding:14px 14px; border-radius:9px; font-family:'Inter',sans-serif; font-size:16px;
   }
   .login-field input:focus{border-color:var(--gold); outline:none;}
   .login-error{
@@ -429,4 +440,47 @@
   #sessionBadge button:hover{color:var(--muscle-soft);}
   @media (max-width:600px){
     #sessionBadge .who span{display:none;}
+  }
+
+  /* ---------- mobile / touch refinements ---------- */
+  html{ -webkit-text-size-adjust:100%; text-size-adjust:100%; }
+  button, a, .drag-chip, .q-opt, .move-item, .acc-trigger{ -webkit-tap-highlight-color:transparent; }
+  .drag-chip, .rail button, .dots-mobile button, .nav-arrow, .btn, .q-opt{
+    touch-action:manipulation; -webkit-touch-callout:none;
+  }
+  .rail button, .dots-mobile button{ min-width:22px; min-height:22px; }
+  .nav-arrow, #sessionBadge, .dots-mobile{
+    padding-left:max(8px, env(safe-area-inset-left));
+    padding-right:max(8px, env(safe-area-inset-right));
+  }
+  .nav-arrow.prev{ left:max(16px, env(safe-area-inset-left)); }
+  .nav-arrow.next{ right:max(16px, env(safe-area-inset-right)); }
+  .dots-mobile{ bottom:max(16px, env(safe-area-inset-bottom)); }
+  #sessionBadge{ top:max(18px, env(safe-area-inset-top)); left:max(18px, env(safe-area-inset-left)); }
+  .progressbar{ max-width:100%; }
+  .quiz-top{ width:100%; }
+
+  @media (max-width:640px){
+    section.slide{ padding:76px 0 72px; }
+    .wrap{ padding:0 18px; }
+    .quiz-shell, .match-shell{ padding:20px; }
+    .login-card{ padding:26px 20px; }
+    .drag-chip{ padding:12px 16px; font-size:.9rem; min-height:44px; display:inline-flex; align-items:center; }
+    .drop-zone{ min-height:48px; }
+    .q-opt{ padding:14px 14px; min-height:44px; }
+    .move-item{ padding:16px; }
+    .btn{ padding:14px 20px; }
+  }
+  @media (max-width:420px){
+    .hero h1{ font-size:1.9rem; }
+    .path{ grid-template-columns:1fr; }
+    .quiz-top{ flex-direction:column; align-items:flex-start; }
+    .brandmark{ font-size:1.1rem; }
+    .login-card h2{ font-size:1.3rem; }
+    .cta-row{ flex-direction:column; align-items:stretch; }
+    .cta-row .btn{ text-align:center; justify-content:center; }
+  }
+  @media (max-height:560px) and (orientation:landscape){
+    section.slide{ padding:64px 0 40px; }
+    .hero{ min-height:auto; }
   }

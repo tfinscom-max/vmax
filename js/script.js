@@ -667,6 +667,7 @@ const DRAG_ACTIVATE_PX = 10;
 
 slidesViewport.addEventListener('pointerdown', (e)=>{
   if(chipDragActive) return;
+  if(e.target.closest('video, input, textarea, select, .drag-chip')) return;
   pointerDown = true; dragMode = false; startX = e.clientX; startY = e.clientY; dragDeltaX = 0;
 });
 
