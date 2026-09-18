@@ -278,6 +278,30 @@
   }
   .lightbox-close:hover{border-color:var(--gold); color:var(--gold-soft);}
 
+  /* ---------- elaborasi image galleries ---------- */
+  .img-gallery{
+    display:grid; grid-template-columns:repeat(auto-fit, minmax(110px,1fr));
+    gap:12px; margin-top:16px;
+  }
+  .img-thumb-card{
+    background:var(--panel-2); border:1px solid var(--line); border-radius:10px;
+    padding:8px; cursor:pointer; text-align:center; transition:border-color .2s, transform .2s;
+  }
+  .img-thumb-card:hover, .img-thumb-card:focus-visible{border-color:var(--gold); transform:translateY(-2px);}
+  .img-thumb-card img{width:100%; height:74px; object-fit:contain; border-radius:6px; background:rgba(255,255,255,0.02);}
+  .img-thumb-card .cap{
+    display:block; margin-top:6px; font-size:.72rem; color:var(--text-dim); line-height:1.3;
+  }
+  .img-thumb-card .zoom-hint{font-size:.65rem; color:var(--gold-soft); opacity:.8;}
+
+  /* ---------- elaborasi video embed ---------- */
+  .concept-video{
+    margin-top:16px; border-radius:12px; overflow:hidden; border:1px solid var(--line);
+    background:#000; position:relative; padding-top:56.25%; height:0;
+  }
+  .concept-video iframe{position:absolute; top:0; left:0; width:100%; height:100%; border:0;}
+  .video-caption{font-size:.78rem; color:var(--text-dim); margin-top:8px; text-align:center;}
+
   /* ---------- elaborasi accordion ---------- */
   .accordion{border-top:1px solid var(--line);}
   .acc-item{border-bottom:1px solid var(--line);}
