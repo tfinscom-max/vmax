@@ -473,7 +473,7 @@ concepts.forEach((c,i)=>{
       addVideo(panelInner, 'DV7k0w35rg8', 'Video: Bagaimana Cara Kerja Otot? (Sliding Filament Theory) — EDUSCOVERY');
       break;
     case 'Manfaat Tari Seudati Secara Fisiologis':
-      addVideo(panelInner, 'B5oI-won_ZI', 'Video: Mengenal Tari Seudati, Warisan Budaya Aceh');
+      addVideo(panelInner, 'wWPkskpPDDE', 'Video: Mengenal Tari Seudati, Warisan Budaya Aceh');
       break;
     case 'Cedera dalam Gerak Tari Seudati':
       addGallery(panelInner, [
