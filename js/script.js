@@ -81,11 +81,11 @@ const concepts = [
     title:"Fungsi dan Jenis Tulang Penyusun Rangka",
     body:`<p>Sebelum masuk ke gerak Seudati, penting memahami peran rangka secara umum. Rangka manusia memiliki lima fungsi utama:</p>
     <ul>
-      <li><strong>Penyokong tubuh</strong> — menopang berat dan bentuk tubuh.</li>
-      <li><strong>Pelindung organ dalam</strong> — misalnya tengkorak melindungi otak, tulang rusuk melindungi jantung dan paru-paru.</li>
-      <li><strong>Alat gerak pasif</strong> — bergerak karena ditarik otot yang melekat padanya.</li>
-      <li><strong>Tempat penyimpanan mineral</strong> — terutama kalsium dan fosfat.</li>
-      <li><strong>Hematopoiesis</strong> — pembentukan sel darah merah, putih, dan trombosit di sumsum tulang.</li>
+      <li><strong>Penyokong tubuh</strong> : menopang berat dan bentuk tubuh.</li>
+      <li><strong>Pelindung organ dalam</strong> : misalnya tengkorak melindungi otak, tulang rusuk melindungi jantung dan paru-paru.</li>
+      <li><strong>Alat gerak pasif</strong> : bergerak karena ditarik otot yang melekat padanya.</li>
+      <li><strong>Tempat penyimpanan mineral</strong> : terutama kalsium dan fosfat.</li>
+      <li><strong>Hematopoiesis</strong> : pembentukan sel darah merah, putih, dan trombosit di sumsum tulang.</li>
     </ul>
     <p>Berdasarkan bentuknya, tulang diklasifikasikan menjadi <strong>tulang pipa</strong> (mis. humerus, femur), <strong>tulang pipih</strong> (mis. tulang tengkorak, tulang belikat), <strong>tulang pendek</strong> (mis. tulang pergelangan tangan/kaki), <strong>tulang tak beraturan</strong> (mis. ruas tulang belakang), dan <strong>tulang sesamoid</strong> (mis. tempurung lutut/patela).</p>`
   },
@@ -93,43 +93,43 @@ const concepts = [
     title:"Rangka: Aksial & Apendikular",
     body:`<p>Rangka manusia terbagi menjadi dua kelompok fungsional:</p>
     <ul>
-      <li><strong>Rangka aksial</strong> — tengkorak, tulang belakang, dan tulang dada, menopang sumbu tubuh. Gerak <em>Nyap</em> paling banyak melibatkan bagian ini.</li>
-      <li><strong>Rangka apendikular</strong> — tulang anggota gerak atas dan bawah beserta gelang bahu/panggul. Gerak <em>Dhiet</em>, <em>Keutreb Jaroe</em>, <em>Rheng</em>, dan <em>Geutham Gaki</em> bertumpu pada rangka apendikular.</li>
+      <li><strong>Rangka aksial</strong> : tengkorak, tulang belakang, dan tulang dada, menopang sumbu tubuh. Gerak <em>Nyap</em> paling banyak melibatkan bagian ini.</li>
+      <li><strong>Rangka apendikular</strong> : tulang anggota gerak atas dan bawah beserta gelang bahu/panggul. Gerak <em>Dhiet</em>, <em>Keutreb Jaroe</em>, <em>Rheng</em>, dan <em>Geutham Gaki</em> bertumpu pada rangka apendikular.</li>
     </ul>`
   },
   {
     title:"Klasifikasi Sendi Berdasarkan Kemampuan Gerak",
     body:`<p>Berdasarkan luas rentang geraknya, sendi (artikulasio) dibedakan menjadi tiga kelompok besar:</p>
     <ul>
-      <li><strong>Sinartrosis</strong> — sendi mati, tidak dapat digerakkan, dihubungkan jaringan ikat rapat atau tulang rawan. Contoh: sutura pada tulang tengkorak.</li>
-      <li><strong>Amfiartrosis</strong> — sendi kaku, hanya memungkinkan gerak terbatas. Contoh: sendi antar-ruas tulang belakang, sendi antara tulang rusuk dan tulang dada.</li>
-      <li><strong>Diartrosis</strong> — sendi gerak bebas, memiliki rongga sendi berisi cairan sinovial. Kelompok inilah yang memungkinkan variasi gerak tari, dengan beberapa tipe: sendi peluru, sendi engsel, sendi putar, sendi pelana, <strong>sendi luncur</strong> (mis. antar tulang pergelangan tangan), dan <strong>sendi kondiloid</strong> (mis. antara tulang pergelangan tangan dan tulang lengan bawah).</li>
+      <li><strong>Sinartrosis</strong> : sendi mati, tidak dapat digerakkan, dihubungkan jaringan ikat rapat atau tulang rawan. Contoh: sutura pada tulang tengkorak.</li>
+      <li><strong>Amfiartrosis</strong> : sendi kaku, hanya memungkinkan gerak terbatas. Contoh: sendi antar-ruas tulang belakang, sendi antara tulang rusuk dan tulang dada.</li>
+      <li><strong>Diartrosis</strong> : sendi gerak bebas, memiliki rongga sendi berisi cairan sinovial. Kelompok inilah yang memungkinkan variasi gerak tari, dengan beberapa tipe: sendi peluru, sendi engsel, sendi putar, sendi pelana, <strong>sendi luncur</strong> (mis. antar tulang pergelangan tangan), dan <strong>sendi kondiloid</strong> (mis. antara tulang pergelangan tangan dan tulang lengan bawah).</li>
     </ul>`
   },
   {
     title:"Jenis Jaringan Otot pada Tubuh Manusia",
     body:`<p>Tubuh manusia memiliki tiga jenis jaringan otot dengan struktur dan cara kerja berbeda:</p>
     <ul>
-      <li><strong>Otot polos</strong> — sel berbentuk gelendong, tidak memiliki garis melintang (polos), bekerja involunter (di luar kesadaran), ditemukan pada dinding organ dalam seperti usus dan pembuluh darah.</li>
-      <li><strong>Otot lurik (rangka)</strong> — sel berbentuk silindris panjang dengan garis melintang, bekerja volunter (disadari), melekat pada rangka dan bertanggung jawab atas seluruh gerak tari yang dipelajari di media ini.</li>
-      <li><strong>Otot jantung</strong> — struktur bergaris mirip otot lurik namun bekerja involunter, hanya ditemukan pada dinding jantung, dengan sel yang bercabang dan saling terhubung agar berkontraksi serentak.</li>
+      <li><strong>Otot polos</strong> : sel berbentuk gelendong, tidak memiliki garis melintang (polos), bekerja involunter (di luar kesadaran), ditemukan pada dinding organ dalam seperti usus dan pembuluh darah.</li>
+      <li><strong>Otot lurik (rangka)</strong> : sel berbentuk silindris panjang dengan garis melintang, bekerja volunter (disadari), melekat pada rangka dan bertanggung jawab atas seluruh gerak tari yang dipelajari di media ini.</li>
+      <li><strong>Otot jantung</strong> : struktur bergaris mirip otot lurik namun bekerja involunter, hanya ditemukan pada dinding jantung, dengan sel yang bercabang dan saling terhubung agar berkontraksi serentak.</li>
     </ul>
-    <p>Karena seluruh gerak Seudati — <em>Dhiet</em>, <em>Keutreb Jaroe</em>, <em>Nyap</em>, <em>Rheng</em>, dan <em>Geutham Gaki</em> — dilakukan secara sadar dan melekat pada rangka, otot yang berperan dalam kelima gerak tersebut seluruhnya adalah <strong>otot lurik</strong>.</p>`
+    <p>Karena seluruh gerak Seudati : <em>Dhiet</em>, <em>Keutreb Jaroe</em>, <em>Nyap</em>, <em>Rheng</em>, dan <em>Geutham Gaki</em> — dilakukan secara sadar dan melekat pada rangka, otot yang berperan dalam kelima gerak tersebut seluruhnya adalah <strong>otot lurik</strong>.</p>`
   },
   {
     title:"Klasifikasi Sendi Berdasarkan Gerak Seudati",
     body:`<p>Kelima gerak inti Seudati mewakili beberapa tipe sendi diartrosis (sendi gerak bebas) yang berbeda:</p>
     <ul>
-      <li><strong>Sendi peluru</strong> (bahu, panggul) — gerak ke segala arah, terlihat pada <em>Dhiet</em> dan <em>Rheng</em>.</li>
-      <li><strong>Sendi engsel jari</strong> (interfalangeal) &amp; <strong>sendi pelana</strong> ibu jari — gerak presisi cepat, terlihat pada <em>Keutreb Jaroe</em>.</li>
-      <li><strong>Sendi amfiartrosis</strong> antar-ruas vertebra — gerak fleksi terbatas, terlihat pada <em>Nyap</em>.</li>
-      <li><strong>Sendi engsel</strong> (lutut, pergelangan kaki) — gerak satu bidang, terlihat pada <em>Geutham Gaki</em>.</li>
+      <li><strong>Sendi peluru</strong> (bahu, panggul) : gerak ke segala arah, terlihat pada <em>Dhiet</em> dan <em>Rheng</em>.</li>
+      <li><strong>Sendi engsel jari</strong> (interfalangeal) &amp; <strong>sendi pelana</strong> ibu jari : gerak presisi cepat, terlihat pada <em>Keutreb Jaroe</em>.</li>
+      <li><strong>Sendi amfiartrosis</strong> antar-ruas vertebra : gerak fleksi terbatas, terlihat pada <em>Nyap</em>.</li>
+      <li><strong>Sendi engsel</strong> (lutut, pergelangan kaki) : gerak satu bidang, terlihat pada <em>Geutham Gaki</em>.</li>
     </ul>`
   },
   {
     title:"Mekanisme Kontraksi Otot Rangka",
     body:`<p>Setiap tepukan dan hentakan bergantung pada mekanisme filamen bergeser (sliding filament): aktin dan miosin saling menarik memendekkan sarkomer saat otot berkontraksi, dipicu ion kalsium dan energi ATP.</p>
-    <p>Karena otot hanya bisa menarik (berkontraksi), gerak berlawanan arah — misalnya menekuk dan meluruskan lutut pada gerak <em>Geutham Gaki</em> — memerlukan pasangan otot antagonis yang bekerja bergantian.</p>`
+    <p>Karena otot hanya bisa menarik (berkontraksi), gerak berlawanan arah misalnya menekuk dan meluruskan lutut pada gerak <em>Geutham Gaki</em> , memerlukan pasangan otot antagonis yang bekerja bergantian.</p>`
   },
   {
     title:"Gerak Sinergis-Antagonis dalam Satu Rangkaian Tari",
@@ -139,24 +139,24 @@ const concepts = [
     title:"Manfaat Tari Seudati Secara Fisiologis",
     body:`<p>Di luar nilai budaya dan spiritualnya, gerak Seudati yang energik dan berulang memberi manfaat fisiologis nyata bagi tubuh penarinya:</p>
     <ul>
-      <li><strong>Kesehatan kardiovaskular</strong> — rangkaian gerak cepat dan berkelanjutan meningkatkan denyut jantung layaknya latihan kardio, melancarkan sirkulasi darah dan oksigen ke seluruh tubuh.</li>
-      <li><strong>Kekuatan dan daya tahan otot</strong> — gerak Dhiet, Keutreb Jaroe, Nyap, Rheng, dan Geutham Gaki yang dilakukan berulang melatih kekuatan otot lurik pada bahu, jari, tulang belakang, dan tungkai secara menyeluruh.</li>
-      <li><strong>Fleksibilitas dan rentang gerak sendi</strong> — variasi gerak yang melibatkan hampir seluruh kelompok sendi membantu menjaga kelenturan dan mengurangi kekakuan tubuh.</li>
-      <li><strong>Keseimbangan dan koordinasi</strong> — sinkronisasi gerak tanpa iringan alat musik menuntut kepekaan proprioseptif yang tinggi, melatih keseimbangan dan koordinasi motorik.</li>
-      <li><strong>Kesehatan tulang</strong> — hentakan dan tumpuan berulang pada tungkai memberi rangsangan mekanis yang mendukung kepadatan tulang.</li>
-      <li><strong>Kesehatan mental</strong> — gerak berkelompok yang energik terbukti membantu menurunkan stres dan meningkatkan suasana hati, sejalan dengan fungsi Seudati sebagai media kebersamaan masyarakat Aceh.</li>
+      <li><strong>Kesehatan kardiovaskular</strong> : rangkaian gerak cepat dan berkelanjutan meningkatkan denyut jantung layaknya latihan kardio, melancarkan sirkulasi darah dan oksigen ke seluruh tubuh.</li>
+      <li><strong>Kekuatan dan daya tahan otot</strong> : gerak Dhiet, Keutreb Jaroe, Nyap, Rheng, dan Geutham Gaki yang dilakukan berulang melatih kekuatan otot lurik pada bahu, jari, tulang belakang, dan tungkai secara menyeluruh.</li>
+      <li><strong>Fleksibilitas dan rentang gerak sendi</strong> : variasi gerak yang melibatkan hampir seluruh kelompok sendi membantu menjaga kelenturan dan mengurangi kekakuan tubuh.</li>
+      <li><strong>Keseimbangan dan koordinasi</strong> : sinkronisasi gerak tanpa iringan alat musik menuntut kepekaan proprioseptif yang tinggi, melatih keseimbangan dan koordinasi motorik.</li>
+      <li><strong>Kesehatan tulang</strong> : hentakan dan tumpuan berulang pada tungkai memberi rangsangan mekanis yang mendukung kepadatan tulang.</li>
+      <li><strong>Kesehatan mental</strong> : gerak berkelompok yang energik terbukti membantu menurunkan stres dan meningkatkan suasana hati, sejalan dengan fungsi Seudati sebagai media kebersamaan masyarakat Aceh.</li>
     </ul>`
   },
   {
     title:"Cedera dalam Gerak Tari Seudati",
     body:`<p>Sama seperti aktivitas fisik intens lainnya, gerak Seudati yang dilakukan berulang tanpa pemanasan atau teknik yang tepat dapat memicu cedera pada sistem gerak. Mengenali pola cederanya membantu penari mencegahnya sejak dini:</p>
     <ul>
-      <li><strong>Cedera bahu (overuse)</strong> — gerak <em>Dhiet</em> (tepuk dada) berulang membebani sendi peluru bahu beserta otot deltoid dan pektoralis mayor secara repetitif.</li>
-      <li><strong>Nyeri punggung bawah</strong> — gerak <em>Nyap</em> (membungkuk maju) berulang tanpa peregangan berimbang dapat menegangkan otot erektor spina.</li>
-      <li><strong>Kram otot betis</strong> — hentakan kaki cepat pada <em>Geutham Gaki</em> yang dilakukan tanpa jeda dapat memicu kontraksi otot betis yang tak terkendali akibat kelelahan dan dehidrasi.</li>
-      <li><strong>Keseleo (sprain) pergelangan kaki</strong> — pendaratan yang tidak tepat saat hentakan kaki atau perputaran tubuh (<em>Rheng</em>) berisiko meregangkan atau merobek ligamen pergelangan kaki.</li>
+      <li><strong>Cedera bahu <em>(overuse)</em></strong> : gerak <em>Dhiet</em> (tepuk dada) berulang membebani sendi peluru bahu beserta otot deltoid dan pektoralis mayor secara repetitif.</li>
+      <li><strong>Nyeri punggung bawah</strong> : gerak <em>Nyap</em> (membungkuk maju) berulang tanpa peregangan berimbang dapat menegangkan otot erektor spina.</li>
+      <li><strong>Kram otot betis</strong> : hentakan kaki cepat pada <em>Geutham Gaki</em> yang dilakukan tanpa jeda dapat memicu kontraksi otot betis yang tak terkendali akibat kelelahan dan dehidrasi.</li>
+      <li><strong>Keseleo <em>(sprain)</em> pergelangan kaki</strong> : pendaratan yang tidak tepat saat hentakan kaki atau perputaran tubuh (<em>Rheng</em>) berisiko meregangkan atau merobek ligamen pergelangan kaki.</li>
     </ul>
-    <p>Pemanasan menyeluruh sebelum berlatih — mencakup bahu, jari tangan, tulang belakang, panggul, dan tungkai — adalah langkah pencegahan yang paling mendasar.</p>`
+    <p>Pemanasan menyeluruh sebelum berlatih : mencakup bahu, jari tangan, tulang belakang, panggul, dan tungkai, adalah langkah pencegahan yang paling mendasar.</p>`
   }
 ];
 
